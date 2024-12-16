@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Login Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Starfall CSS Animation with Buttons</title>
+    <link rel="stylesheet" href="style2.css">
     <style>
-        html, body {
-            height: 100%;
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #F4E2D8;
-            animation: gradient-move 15s linear infinite;
-        }
-
-        @keyframes gradient-move {
-            0% { background-color: #F4E2D8; }
-            10% { background-color: #FF5F6D; }
-            20% { background-color: rgb(255, 199, 121); }
-            40% { background-color: #ff9068; }
-            60% { background-color: #CB3066; }
-            80% { background-color: #16BFFD; }
-            90% { background-color: #EECDA3; }
-            100% { background-color: #F4E2D8; }
-        }
-
-        .card {
-            max-width: 200px;
-            padding: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.45);
-            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-            backdrop-filter: blur(15px);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            color: #224;
+        .button-container {
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
         }
 
         .btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            color: white;
+            padding: 10px 20px;
             border-radius: 5px;
-            background-color: #c9d6ff;
-            color: blueviolet;
-            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            
         }
 
         .btn:hover {
-            text-decoration: underline;
-            color: blue;
+            background: rgba(255, 255, 255, 0.3);
+            color: black;
         }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="starfall">
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+        <div class="falling-star"></div>
+    </div>
+
+    <div class="button-container">
+        <button class="btn" onclick="window.open('https://drive.google.com/drive/folders/1-fJFfoj8toSR-hG_8arPVpUO46qn3zO8')">Button 1</button>
+        <button class="btn" onclick="window.open('https://1drv.ms/w/s!AsCFgmSeMLBSccyUD53XzM3b5_w')">Button 2</button>
+        <button class="btn" onclick="window.open('https://1drv.ms/w/s!AsCFgmSeMLBSdRBnqAGG4nuUaUw?e=NWACiE')">Button 3</button>
+        <button class="btn" onclick="window.open('https://1drv.ms/w/s!AsCFgmSeMLBSd2Qb042Uqn2X1Ls?e=tmIU1o')">Button 4</button>
+        <button class="btn" onclick="window.open('https://example.com/link5', '_blank')">Button 5</button>
+        <button class="btn" onclick="window.open('https://example.com/link6', '_blank')">Button 6</button>
         <button id="logout" class="btn">Logout</button>
     </div>
-    <script type="module" src="./homepage.js"></script>
+    <div class="content">
+        <h2 class="section-title">About buttons</h2>
+        <p> button1 = for rgpv notes all subjects and also have some books     butto2 = physics important topics      button3 civil important topics       button4 computer important topics</p>
 </body>
 </html>
