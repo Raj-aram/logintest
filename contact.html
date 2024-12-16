@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Gradient Background Animation</title>
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        html {
+            height: 100%;
+            font-family: 'Nixie One', cursive;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #F4E2D8;
+            animation: gradient-move 15s linear infinite;
+        }
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        @keyframes gradient-move {
+            0% { background-color: #F4E2D8; }
+            10% { background-color: #FF5F6D; }
+            20% { background-color: rgb(255, 199, 121); }
+            40% { background-color: #ff9068; }
+            60% { background-color: #CB3066; }
+            80% { background-color: #16BFFD; }
+            90% { background-color: #EECDA3; }
+            100% { background-color: #F4E2D8; }
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 10px 10px 5px rgba(6, 1, 1, 0.43);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .section-title {
+            font-family: 'Nixie One', cursive;
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            color: #000;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        li:before {
+            content: "•";
+            padding-right: 0.5em;
+            color: #FF5F6D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8">
+                <form>
+                    <h1>WELCOME</h1>
+                    <div class="form-group">
+                        <label>feel free to connect </label>
+                    </div>
+                    <div class="form-group">
+                        <label>contact not available</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="section-title">About Us</h2>
+        <p>NRI Group of Institutions (NGI) was founded by Mr D. Subodh Singh, a technocrat and NRI, in the year 2000. It runs by the Taramathi Education Society formed by NRIs based in the USA and highly qualified technocrats in India. NRI Group of institutions is a leading group of educational institutions of India that is providing professional degrees in engineering, pharmacy, management, law, nursing, physiotherapy, and paramedical sciences for 21 years. The institute caters to over 5000+ students studying across 25 acres of high-tech campus. The institute nurtures students coming from all walks of society to experience quality and equal education. The college is sensitive to individual, racial, and ethnic differences and seeks students from diverse cultural backgrounds. Our institute believes in providing the best of the Indian Education system with a blend of educational techniques of the USA. Apart from providing education, we at NRI believe in developing responsible and sensitive citizens who should always be ready to serve society and the country.</p>
+
+        <h3 class="section-title">Vision and Mission</h3>
+        <p>The group’s mission is to build the tomorrow of Indian Society by nurturing the career and lives of our students. Our prestigious group is dedicated to providing quality education and focusing on the overall development of the student. Our agenda is to prepare our students to make a difference in society and the world by being the best in whatever field they choose.</p>
+
+        <h3 class="section-title">Pinnacles of NRI: Key Highlights, Achievements, and Recognition</h3>
+        <ul>
+            <li>Collaborations with International Associations, like IEEE, ISTE, CSI, SPICMACAY for various activities (academic, technical, and cultural).</li>
+            <li>Tutor-Guardian (TG) System for the professional and personal guidance of students.</li>
+            <li>Remote Centre and Resource Centre of IIT Bombay.</li>
+            <li>Participation in Aakash Project under which Aakash Tablets have been issued to the institute for Aakash lab project under National Mission on Education through ICT (MHRD, Govt. of India).</li>
+            <li>E-yantra Nodal Centre of IIT Bombay to promote Robotics knowledge in students.</li>
+            <li>Approved by AICTE; Affiliated to RGTU/BU.</li>
+            <li>International Accreditation by IAO.</li>
