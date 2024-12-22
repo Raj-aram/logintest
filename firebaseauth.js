@@ -10,8 +10,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/fireba
     messagingSenderId: "202091125695",
     appId: "1:202091125695:web:38e145879846cde6831f0a"
   };
- //YOUR COPIED FIREBASE PART SHOULD BE HERE
- //WATCH THIS VIDEO TO LEARN WHAT TO PUT HERE   https://youtu.be/_Xczf06n6x0
+ 
  
 
  // Initialize Firebase
