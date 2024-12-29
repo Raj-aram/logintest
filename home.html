@@ -1,189 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raja ji</title>
-    
-    <link rel="stylesheet" href="style2.css">
-    <style>
-        .button-container {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -20%);
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        .btn {
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.6);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            color: black;
-        }
-
-        nav {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            color: black;
-        }
-    </style>
-</head>
-<body>
-    
-
-    <div class="starfall">
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-        <div class="falling-star"></div>
-    </div>
-
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            
-            
-            margin-bottom: 20px;
-        }
-
-        .link-card {
-            
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .link-card h2 {
-            margin-top: 0;
-            color: #08f117;
-        }
-
-        .link-card p {
-            margin: 10px 0;
-        }
-
-        .link-card a {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #e67010;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .link-card a:hover {
-            background-color: #f89605;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Useful Links by Raja ji</h1>
-    </header>
-    <div class="button-container">
-        <button class="btn" onclick="window.open('https://drive.google.com/drive/folders/1-fJFfoj8toSR-hG_8arPVpUO46qn3zO8')">Button 1</button>
-        <button class="btn" onclick="window.open('https://1drv.ms/w/s!AsCFgmSeMLBSccyUD53XzM3b5_w')">Button 2</button>
-        <button class="btn" onclick="window.open('https://1drv.ms/w/s!AsCFgmSeMLBSdRBnqAGG4nuUaUw?e=NWACiE')">Button 3</button>
-        <button class="btn" onclick="window.open('1inde.html')">Button 4</button>
-
-       
-        <button class="btn" onclick="window.open('https://rajeshpd339.github.io/NumberFunApp/')">Button 5</button>
-       
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>Study Materials Raja ji</title>  
+    <style>  
+        /* General Reset */  
+        * {  
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  
         
-    </div>
+        body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f4f4f9;  
+            color: #333;  
+            line-height: 1.6;  
+            padding-top: 60px;  
+        }  
 
-    <div class="link-card">
-        <h2>Link Title 1</h2>
-        <p>This is a description for Link 1. whole premimum notes collections </p>
-        </div>
+        /* Navigation Bar */  
+        header {  
+            background-color: #2a3d66;  
+            padding: 15px 0;  
+            position: fixed;  
+            top: 0;  
+            left: 0;  
+            right: 0;  
+            z-index: 1000;  
+            text-align: center; /* Center the content inside header */  
+        }  
 
-    <div class="link-card">
-        <h2>Link Title 2</h2>
-        <p>This is a description for Link 2. It provides some important notes collecotions.</p>
-        </div>
+        h1 {  
+            color: white;  
+            font-size: 2rem;  
+            font-weight: bold;  
+        }  
 
-    <div class="link-card">
-        <h2>Link Title 3</h2>
-        <p>This is a description for Link 3. It provides some context or summary of what the link is about.</p>
-        
-    </div>
-    <div class="link-card">
-        <h2>Link Title 4</h2>
-        <p>This is a description for Link 3. It provides some context or summary of what the link is about.</p>
-        
-    </div>
+        /* Page Heading */  
+        .heading {  
+            text-align: center;  
+            margin-top: 100px;  
+            font-size: 2.5rem;  
+            color: #2a3d66;  
+            font-weight: bold;  
+            padding: 30px;  
+        }  
 
-    <!-- Add more link cards as needed -->
+        /* Study Materials Section */  
+        .materials-section {  
+            padding: 40px 20px;  
+            text-align: center;  
+            margin-top: 100px; /* Added to prevent overlap with fixed navbar */  
+        }  
 
+        h2 {  
+            font-size: 2rem;  
+            color: #2a3d66;  
+            margin-bottom: 20px;  
+        }  
 
-</body>
+        .materials-container {  
+            display: flex;  
+            justify-content: center;  
+            gap: 30px;  
+            flex-wrap: wrap;  
+        }  
+
+        /* 3D Button Styling */  
+        .button {  
+            display: inline-block;  
+            padding: 15px 30px;  
+            background-color: #ffcc00;  
+            color: #333;  
+            text-decoration: none;  
+            font-weight: bold;  
+            border-radius: 10px;  
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
+            transition: all 0.3s ease;  
+            transform: translateY(0);  
+        }  
+
+        .button:hover {  
+            background-color: #2a3d66;  
+            color: white;  
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  
+            transform: translateY(-4px);  
+        }  
+
+        .button:active {  
+            transform: translateY(2px);  
+        }  
+
+        /* Footer */  
+        footer {  
+            background-color: #2a3d66;  
+            color: white;  
+            text-align: center;  
+            padding: 20px;  
+            position: relative;  
+            bottom: 0;  
+            width: 100%;  
+        }  
+
+        footer p {  
+            font-size: 1rem;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+    <!-- Navigation Bar -->  
+    <header>  
+        <h1>Study Material</h1>  
+    </header>  
+
+    <!-- Study Materials Section (Moved to Top) -->  
+    <section class="materials-section">  
+        <h2>Available Study Materials</h2>  
+        <div class="materials-container">  
+            <!-- Button 1 -->  
+            <a href="https://drive.google.com/drive/folders/1-fJFfoj8toSR-hG_8arPVpUO46qn3zO8" class="button" target="_blank">  
+                1st All Notes  
+            </a>  
+            <!-- Button 2 -->  
+            <a href="https://1drv.ms/w/s!AsCFgmSeMLBSccyUD53XzM3b5_w" class="button" target="_blank">  
+                Physics Notes  
+            </a>  
+            <!-- Button 3 -->  
+            <a href="https://1drv.ms/w/s!AsCFgmSeMLBSdRBnqAGG4nuUaUw?e=NWACiE" class="button" target="_blank">  
+                Chemistry Notes  
+            </a>  
+            <!-- Button 4 -->  
+            <a href="https://drive.google.com/your-link" class="button" target="_blank">  
+                Computer Science Notes  
+            </a>  
+            <!-- Button 5 -->  
+            <a href="https://drive.google.com/your-link" class="button" target="_blank">  
+                Biology Notes  
+            </a>  
+        </div>  
+    </section>  
+
+    <!-- Footer -->  
+    <footer>  
+        <p>&copy; Website Owner AiMl group</p>  
+    </footer>  
+
+</body>  
 </html>
