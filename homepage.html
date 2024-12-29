@@ -14,6 +14,49 @@
             overflow-x: hidden; /* Prevent horizontal scroll */  
             overflow-y: auto; /* Allow vertical scroll */  
         }  
+          body {
+            margin: 0;
+            overflow: hidden;
+            background: rgb(232, 224, 224); /* Enhances the gaming theme */
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+        .gate {
+            position: fixed;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            z-index: 10;
+            background: linear-gradient(
+                135deg,
+                #1a1a1a,
+                #777676 30%,
+                #ff004d 50%,
+                #292929 70%,
+                #1a1a1a
+            );
+            border: 2px solid #ff004d;
+            box-shadow: 0 0 20px #ff004d, 0 0 50px #ff004d inset;
+            overflow: hidden;
+        }
+        
+        
+       
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px #ff004d, 0 0 20px #ff004d;
+        }
+    
 
         /* Keyframe animations for fade-in and slide-in */  
         @keyframes fadeIn {  
@@ -118,12 +161,7 @@
         <li class="nav-item">  
             <a class="nav-link" href="about.html">About</a>  
         </li>  
-        <li class="nav-item">  
-            <a class="nav-link" href="photo.html">Student Build</a>  
-        </li>  
-        <li class="nav-item">  
-            <a class="nav-link" href="signup.html"> </a>  
-        </li>  
+        
     </ul>  
 
     <h1 class="text-center">NRI GROUP OF Institution</h1>  
